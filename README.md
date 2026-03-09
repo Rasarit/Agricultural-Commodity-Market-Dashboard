@@ -1,12 +1,31 @@
 # Agricultural Market Dashboard – Maize Price Analysis
 
+## Dashboard Preview
+
+![Agricultural Market Dashboard](agri_market_dashboard.png)
+
+---
+
+## Project Goal
+
+The goal of this project is to demonstrate how agricultural market data can be analyzed and summarized using **R** to generate insights about **price trends, seasonal patterns, supply effects, and market volatility**.
+
+This dashboard combines multiple analyses into a **single visual report**, similar to how analysts present insights to decision-makers.
+
+---
+
 ## Project Overview
 
-This project presents an **Agricultural Market Dashboard** built using **R** to summarize key insights from maize market data.
+This project builds a **market analysis dashboard** using maize price and arrival data.
 
-The dashboard combines multiple analyses into a single visual report, helping users quickly understand **price trends, seasonal patterns, supply effects, and market volatility**.
+The dashboard summarizes key aspects of agricultural markets including:
 
-Dashboards like this are commonly used by analysts to **communicate market insights clearly and visually**.
+* long-term price trends
+* seasonal price behavior
+* the relationship between supply and price
+* short-term price fluctuations
+
+By combining multiple visualizations into one layout, the dashboard provides a **quick overview of market behavior**.
 
 ---
 
@@ -20,7 +39,7 @@ The dataset contains historical maize market observations.
 | price    | Maize market price (₹ per quintal) |
 | arrivals | Market arrivals (supply volume)    |
 
-The dataset includes **monthly observations across several years**, allowing trend and pattern analysis.
+The dataset includes **monthly observations across several years**, allowing meaningful trend and pattern analysis.
 
 ---
 
@@ -49,31 +68,23 @@ agri-market-dashboard
 
 ## Dashboard Components
 
-The dashboard contains four analytical panels:
+The dashboard contains four analytical panels.
 
 ### 1. Price Trend
 
-Displays how maize prices change over time and highlights long-term market movement.
+Shows how maize prices evolve over time and highlights the long-term market trend.
 
 ### 2. Monthly Price Distribution
 
-Shows the seasonal distribution of maize prices across months.
+Displays the distribution of maize prices across months to identify seasonal behavior.
 
 ### 3. Price vs Market Arrivals
 
-Examines the relationship between market supply and price using a regression trend.
+Explores the relationship between market supply and price using a regression trend line.
 
 ### 4. Monthly Price Change
 
-Visualizes price fluctuations between consecutive months to identify volatility.
-
----
-
-## Dashboard Output
-
-The script generates a **4-panel dashboard** summarizing the analysis.
-
-![Agricultural Market Dashboard](agri_market_dashboard.png)
+Visualizes short-term price fluctuations to highlight market volatility.
 
 ---
 
@@ -82,31 +93,20 @@ The script generates a **4-panel dashboard** summarizing the analysis.
 The analysis followed these steps:
 
 1. Load maize market data
-2. Convert dates to time format
+2. Convert date variables into time format
 3. Calculate monthly price changes
-4. Explore the relationship between price and arrivals
-5. Visualize patterns using multiple charts
-6. Combine charts into a single dashboard layout
+4. Explore relationships between price and arrivals
+5. Generate visualizations for trend, distribution, correlation, and volatility
+6. Combine the visualizations into a **single dashboard layout**
 
 ---
 
-## Key Insights
+## Key Takeaways
 
-### Insight 1 — Price Trend
-
-Maize prices show a gradual upward trend over the observed period.
-
-### Insight 2 — Seasonal Pattern
-
-Monthly price distribution suggests seasonal variation in maize markets.
-
-### Insight 3 — Supply Impact
-
-Higher market arrivals tend to be associated with lower prices.
-
-### Insight 4 — Market Volatility
-
-Monthly price changes highlight periods of higher market fluctuations.
+* Maize prices show a **gradual upward trend** over the observed period.
+* Seasonal patterns suggest **variation in prices across months**.
+* Higher market arrivals are associated with **lower maize prices**, reflecting supply effects.
+* Monthly price changes highlight **periods of higher market volatility**.
 
 ---
 
@@ -141,4 +141,5 @@ agri_market_dashboard.png
 **Kiran Jala**
 MBA Agribusiness Management
 
-Interest areas: Agricultural market analysis, commodity price forecasting, and data analytics.
+Interest areas:
+Agricultural market analysis, commodity price forecasting, and data analytics.
